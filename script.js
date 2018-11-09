@@ -97,19 +97,6 @@ function setPlace(){
         }while(continua==false);
         console.log(posPlayer);
 }
-//Controlador que s'executarà cada segón
-function pacMan(){
-    posX++;
-    if(mapa[posX+1][posY]==1){
-    mapa[posX][posY]=1;
-    mapa[posX+1][posY]="U";
-    }else{
-        console.log("bueno dia");
-    }
-    comprovarFantasma();
-    comprovarDirPlayer();
-    muestraMapa(mapa);
-}
 
 //Comprova la direcció del player i guarda a un array quines direccions són accesibles
 function comprovarDirPlayer(){
@@ -136,34 +123,102 @@ function comprovarDirPlayer(){
 //Per cada fantasma comprova què direccions pot prendre i fa el mateix que abans amb el player 
 function comprovarFantasma(){
     for(var n = 0; n<=2;n++){
-    var direccions = 0;
-    if(mapa[posFantasma[n][0]+1][posFantasma[n][1]]==1){
-        dirFantasma[n][0]=true;
-        direccions++;
-    }
+
     if(mapa[posFantasma[n][0]-1][posFantasma[n][1]]==1){
-        dirFantasma[n][2]=true;
-        direccions++;
+        dirFantasma[n][0]=true;
+
+    }else{
+        dirFantasma[n][0]=false;
     }
-    if(mapa[posFantasma[n][0]][posFantasma[n][1]+1]==1){
-        dirFantasma[n][3]=true;
-        direccions++;
+    if(mapa[posFantasma[n][0]+1][posFantasma[n][1]]==1){
+        dirFantasma[n][2]=true;
+
+    }else{
+        dirFantasma[n][2]=false;
     }
     if(mapa[posFantasma[n][0]][posFantasma[n][1]-1]==1){
-        dirFantasma[n][1]=true;
-        direccions++;
+        dirFantasma[n][3]=true;
+
+    }else{
+        dirFantasma[n][3]=false;
     }
-    //Aquí fa el mateix que amb el player, guardant el numero de la direcció. 
+    if(mapa[posFantasma[n][0]][posFantasma[n][1]+1]==1){
+        dirFantasma[n][1]=true;
+
+    }else{
+        dirFantasma[n][1]=false;
+    }
+     //El bucle de canviar direcció no s'executarà si el fantasma està a una recta   
+    var changeDir=false;
+    if(posFantasma[n][2]==0 && mapa[posFantasma[n][0]-1][posFantasma[n][1]]==0){
+        changeDir=true;
+        //dirFantasma[n][2]=false;
+    }
+    else if(posFantasma[n][2]==2 && mapa[posFantasma[n][0]+1][posFantasma[n][1]]==0){
+        changeDir=true;
+        //dirFantasma[n][0]=false;
+    }
+    else if(posFantasma[n][2]==1 && mapa[posFantasma[n][0]][posFantasma[n][1]+1]==0){
+        changeDir=true;
+        //dirFantasma[n][3]=false;
+    }
+    else if(posFantasma[n][2]==3 && mapa[posFantasma[n][0]][posFantasma[n][1]-1]==0){
+        changeDir=true;
+        //dirFantasma[n][1]=false;
+    }
+    //De totes les direccions disponibles agafa una
+    if(changeDir==true){
     do{
     var direccio = Math.floor((Math.random() * 3) + 0);
 
     }while(dirFantasma[n][direccio]!=true);
-        
-        dirFantasma[n][3]=direccio;
+        posFantasma[n][2]=direccio;
+    }
     }
     
 }
-
+//Depenent de la direcció obtinguda disponible es mourà cap a una direcció o altra. 
+function moureFantasma(){
+    
+    for(n=0;n<=2;n++){
+        var dir = posFantasma[n][2];
+        if(dir == 0){
+            mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
+            posFantasma[n][0] -=1;
+            mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
+        }
+        else if(dir == 2){
+            mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
+            posFantasma[n][0] +=1;
+            mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
+        }
+        else if(dir == 1){
+            mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
+            posFantasma[n][1] +=1;
+            mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
+        }
+        else if(dir == 3){
+            mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
+            posFantasma[n][1] -=1;
+            mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
+        }
+    }
+}
+//Controlador que s'executarà cada segón
+function pacMan(){
+//    posX++;
+//    if(mapa[posX+1][posY]==1){
+//    mapa[posX][posY]=1;
+//    mapa[posX+1][posY]="U";
+//    }else{
+//        console.log("bueno dia");
+//    }
+    comprovarFantasma();
+    comprovarDirPlayer();
+    moureFantasma()
+    muestraMapa(mapa);
+    console.log(posFantasma);
+}
 
 //console.log("El length es: "+)
 muestraMapa(mapa);
@@ -171,7 +226,7 @@ posicioFantasmesInicial();
 setPlace();
 muestraMapa(mapa);
 
-setInterval(pacMan, 1000);
+setInterval(pacMan, 500);
 
 
 
