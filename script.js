@@ -6,20 +6,20 @@ var mapa = [
   [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
   [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
   [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0],
+  [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0],
   [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
   [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
   [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
@@ -120,29 +120,57 @@ function comprovarDirPlayer(){
     posPlayer[2]=direccio;
     console.log("La direcció del player és: "+direccio);
 }
+function mourePlayer(){
+    if(viu==true){
+    if(dirTeclat==0&&mapa[posPlayer[0]-1][posPlayer[1]]!=0){
+        mapa[posPlayer[0]][posPlayer[1]]=1;
+        posPlayer[0]-=1;
+        mapa[posPlayer[0]][posPlayer[1]]="U";
+    }
+    if(dirTeclat==2&&mapa[posPlayer[0]+1][posPlayer[1]]!=0){
+        mapa[posPlayer[0]][posPlayer[1]]=1;
+        posPlayer[0]+=1;
+        mapa[posPlayer[0]][posPlayer[1]]="U";
+    }
+    if(dirTeclat==1&&mapa[posPlayer[0]][posPlayer[1]+1]!=0){
+        mapa[posPlayer[0]][posPlayer[1]]=1;
+        posPlayer[1]+=1;
+        mapa[posPlayer[0]][posPlayer[1]]="U";
+    }
+    if(dirTeclat==3&&mapa[posPlayer[0]][posPlayer[1]-1]!=0){
+        mapa[posPlayer[0]][posPlayer[1]]=1;
+        posPlayer[1]-=1;
+        mapa[posPlayer[0]][posPlayer[1]]="U";
+    }
+    }else{
+        mapa[posPlayer[0]][posPlayer[1]]="1";
+    }
+    
+}
+
 //Per cada fantasma comprova què direccions pot prendre i fa el mateix que abans amb el player 
 function comprovarFantasma(){
     for(var n = 0; n<=2;n++){
 
-    if(mapa[posFantasma[n][0]-1][posFantasma[n][1]]==1){
+    if(mapa[posFantasma[n][0]-1][posFantasma[n][1]]!=0){
         dirFantasma[n][0]=true;
 
     }else{
         dirFantasma[n][0]=false;
     }
-    if(mapa[posFantasma[n][0]+1][posFantasma[n][1]]==1){
+    if(mapa[posFantasma[n][0]+1][posFantasma[n][1]]!=0){
         dirFantasma[n][2]=true;
 
     }else{
         dirFantasma[n][2]=false;
     }
-    if(mapa[posFantasma[n][0]][posFantasma[n][1]-1]==1){
+    if(mapa[posFantasma[n][0]][posFantasma[n][1]-1]!=0){
         dirFantasma[n][3]=true;
 
     }else{
         dirFantasma[n][3]=false;
     }
-    if(mapa[posFantasma[n][0]][posFantasma[n][1]+1]==1){
+    if(mapa[posFantasma[n][0]][posFantasma[n][1]+1]!=0){
         dirFantasma[n][1]=true;
 
     }else{
@@ -167,11 +195,13 @@ function comprovarFantasma(){
         //dirFantasma[n][1]=false;
     }
     //De totes les direccions disponibles agafa una
+    
     if(changeDir==true){
     do{
     var direccio = Math.floor((Math.random() * 3) + 0);
 
     }while(dirFantasma[n][direccio]!=true);
+        
         posFantasma[n][2]=direccio;
     }
     }
@@ -182,52 +212,114 @@ function moureFantasma(){
     
     for(n=0;n<=2;n++){
         var dir = posFantasma[n][2];
-        if(dir == 0){
+        if(dir == 0){//Arriba
             mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
             posFantasma[n][0] -=1;
             mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
         }
-        else if(dir == 2){
+        else if(dir == 2){//Abajo
             mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
             posFantasma[n][0] +=1;
             mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
         }
-        else if(dir == 1){
+        else if(dir == 1){//Derecha
             mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
             posFantasma[n][1] +=1;
             mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
         }
-        else if(dir == 3){
+        else if(dir == 3){//Izquierda
             mapa[posFantasma[n][0]][posFantasma[n][1]]=1;
             posFantasma[n][1] -=1;
             mapa[posFantasma[n][0]][posFantasma[n][1]]="X";
         }
     }
 }
+
 //Controlador que s'executarà cada segón
 function pacMan(){
-//    posX++;
-//    if(mapa[posX+1][posY]==1){
-//    mapa[posX][posY]=1;
-//    mapa[posX+1][posY]="U";
-//    }else{
-//        console.log("bueno dia");
-//    }
-    comprovarFantasma();
+    var element = document.getElementById("all");  
+	document.onkeydown = teclat;
+    
     comprovarDirPlayer();
-    moureFantasma()
-    muestraMapa(mapa);
-    console.log(posFantasma);
+    
+    comprovarFantasma();
+    moureFantasma();
+    mourePlayer();
+    mostrarMapa();
+    
+    console.log("La posicion del player: "+posPlayer[0]+" "+posPlayer[1]);
+    console.log("La posicion del fantasma1: "+posFantasma[0][0]+" "+posFantasma[0][1]);
+    console.log("La posicion del fantasma2: "+posFantasma[1][0]+" "+posFantasma[1][1]);
+    console.log("La posicion del fantasma3: "+posFantasma[2][0]+" "+posFantasma[2][1]);
+    
+    if(posPlayer[0]==posFantasma[0][0]&&posPlayer[1]==posFantasma[0][1]||
+      posPlayer[0]==posFantasma[1][0]&&posPlayer[1]==posFantasma[1][1]||
+      posPlayer[0]==posFantasma[2][0]&&posPlayer[1]==posFantasma[2][1]){
+        document.getElementById("bloc").innerHTML = "Has perdut amb "+points+" punts :( <br> <button type='button' onclick='restart()'>Reinicia</button>"; 
+        viu=false;
+    }else if(viu==true){
+    document.getElementById("bloc").innerHTML = "Punts: <font color='green'>"+points+"</font> de 120"; 
+    points++;
+    }
+    if(points>=120){
+        document.getElementById("bloc").innerHTML = "Has guanyat!";
+        viu=false;
+    }
+}
+var dirTeclat = 0;
+function teclat(e){ 
+	var key = document.all ? e.which : e.key;
+	if (key == "ArrowUp"&&mapa[posPlayer[0]-1][posPlayer[1]]!=0){
+		dirTeclat = 0; //arriba
+	}
+	else if (key == "ArrowRight"&&mapa[posPlayer[0]][posPlayer[1]+1]!=0){
+		dirTeclat = 1; //derecha
+	}
+	else if (key=="ArrowDown"&&mapa[posPlayer[0]+1][posPlayer[1]]!=0){
+		dirTeclat = 2; //abajo
+	}	
+	else if (key =="ArrowLeft"&&mapa[posPlayer[0]][posPlayer[1]-1]!=0){
+		dirTeclat = 3; //izquierda
+	}
 }
 
-//console.log("El length es: "+)
-muestraMapa(mapa);
+var points = 0;
+function mostrarMapa(){ 
+	var canvas = document.getElementById("mapa");
+	var img; 
+	for(y=0;y<=31;y++)
+	{	
+		for(x=0;x<=27;x++)
+		{
+			if (mapa[y][x] == 0){
+				img = document.getElementById("paret"); 
+				}
+			else if (mapa[y][x] == 1){
+				img = document.getElementById("cami"); 
+			}
+			else if (mapa[y][x] == "U"){ 
+				img = document.getElementById("pacman");
+			}
+			else if (mapa[y][x] == "X"){ 
+				img = document.getElementById("fantasma");
+			}
+			var ctx = canvas.getContext("2d").drawImage(img, x*20, y*20, 20, 20 ); 
+		}
+	}
+}
+function restart(){
+    location.reload();
+}
+
+document.getElementById("bloc");
+var viu =true;
+mostrarMapa();
 posicioFantasmesInicial();
 setPlace();
-muestraMapa(mapa);
-
-setInterval(pacMan, 500);
-
+var pacoMan = setInterval(pacMan, 500);
+if(viu==false){
+//clearInterval(pacoMan);
+}
 
 
 

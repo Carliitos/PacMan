@@ -1,0 +1,25 @@
+#bloc{
+    background-color: #a465b4;
+    width: 14rem;
+    height: 9rem;
+    color: white;
+    float: right;
+    padding: 1rem;
+    font-size: 1.6rem;
+    margin: 1rem;
+}
+
+button{
+    background-color: mediumpurple;
+    border-radius: 0.12rem;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: 0.1em solid #bb6fda;
+    font-size: 2rem;
+    color: white;
+    margin: 0.5rem;
+    
+}
+body{
+    font-family: 'Allerta Stencil', sans-serif;
+}
