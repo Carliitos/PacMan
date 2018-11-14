@@ -1,37 +1,37 @@
 
 var mapa = [
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0],
-  [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0],
-  [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0],
-  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 0],
-  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+  [0, 1, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0],
+  [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 0],
+  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
 
 ];
 var posPlayer = [0, 0, 0]; //array amb la posició del jugador i la direcció a l'última posició
@@ -45,20 +45,7 @@ var dirFantasma = [
     [false, false, false, false]  
 ];
 var dirPlayer =[false, false, false, false];
-function muestraMapa(mapa){
-    var map = "";
-    for(var x=0; x<mapa.length; x++){
-    for(var y=0; y<mapa[x].length; y++){
-        
-        if(y==(mapa[x].length)-1){
-            map+=mapa[x][y]+"\n"
-        }else{
-         map+=mapa[x][y]+" "   
-        }
-    }
-}
-    console.log(map);
-}
+
 //Posiciona inicialment els fantasmes i guarda les coordenades a l'array posFantasma
 function posicioFantasmesInicial(){
     for(var f = 0;f <=2; f++ ){
@@ -81,7 +68,7 @@ function posicioFantasmesInicial(){
 }
 var posX = 0;
 var posY = 0;
-//Posiciona inicialment al jugador
+//Posiciona inicialment al jugador a una posició disponible
 function setPlace(){
             var continua = false;
         
@@ -100,26 +87,26 @@ function setPlace(){
 
 //Comprova la direcció del player i guarda a un array quines direccions són accesibles
 function comprovarDirPlayer(){
-    if(mapa[posPlayer[0]+1][posPlayer[1]]==1){
+    if(mapa[posPlayer[0]+1][posPlayer[1]]!=0){
         dirPlayer[0]=true;
     }else dirPlayer[0]=false;
-    if(mapa[posPlayer[0]-1][posPlayer[1]]==1){
+    if(mapa[posPlayer[0]-1][posPlayer[1]]!=0){
         dirPlayer[1]=true;
     }else dirPlayer[1]=false;
-    if(mapa[posPlayer[0]][posPlayer[1]+1]==1){
+    if(mapa[posPlayer[0]][posPlayer[1]+1]!=0){
         dirPlayer[2]=true;
     }else dirPlayer[2]=false;
-    if(mapa[posPlayer[0]][posPlayer[1]-1]==1){
+    if(mapa[posPlayer[0]][posPlayer[1]-1]!=0){
         dirPlayer[3]=true;
     }else dirPlayer[2]=false;
-    //Agafa un número random entre 0 i 3 i comprova que a aquesta posició de l'array la direcció sigui accesible, si ho és, guarda a la tercera posició de l'array de la posició la direcció. 
+    //Agafa un número random entre 0 i 3 i comprova que a aquesta posició de l'array la direcció sigui accesible, si ho és, guarda a la tercera posició de l'array de la posició la direcció si no ho és, executa de nou el bucle i prova amb altra direcció. 
     do{
     var direccio = Math.floor((Math.random() * 3) + 0);
 
     }while(dirPlayer[direccio]!=true);
     posPlayer[2]=direccio;
-    console.log("La direcció del player és: "+direccio);
 }
+//A aquesta funció si la variable "viu" és true, comprova la direcció del comecocos i comprova si es pot anar, si es pot, mou una posició, si no, no fa res. Si la variable viu no és true, marca la casella amb un 1, equivalent a res.  
 function mourePlayer(){
     if(viu==true){
     if(dirTeclat==0&&mapa[posPlayer[0]-1][posPlayer[1]]!=0){
@@ -148,10 +135,15 @@ function mourePlayer(){
     
 }
 
-//Per cada fantasma comprova què direccions pot prendre i fa el mateix que abans amb el player 
+//Per cada fantasma comprova què direccions pot prendre i fa el mateix que abans amb el player, guardant a l'array direcció fantasma un true o un false a cada posició.
 function comprovarFantasma(){
+    dirFantasma = [
+    [false, false, false, false], 
+    [false, false, false, false],
+    [false, false, false, false]  
+];
     for(var n = 0; n<=2;n++){
-
+    
     if(mapa[posFantasma[n][0]-1][posFantasma[n][1]]!=0){
         dirFantasma[n][0]=true;
 
@@ -176,29 +168,30 @@ function comprovarFantasma(){
     }else{
         dirFantasma[n][1]=false;
     }
-     //El bucle de canviar direcció no s'executarà si el fantasma està a una recta   
+     //El bucle de canviar direcció no s'executarà si el fantasma està a una recta, a continuació es comprova que el fantasma pot seguir avançant, si no pot, la variable changeDir es canvia a true, la qual cosa executarà el codi del final de la funció. També faig que no pugui tornar per on ha vingut. 
     var changeDir=false;
     if(posFantasma[n][2]==0 && mapa[posFantasma[n][0]-1][posFantasma[n][1]]==0){
         changeDir=true;
-        //dirFantasma[n][2]=false;
+        dirFantasma[n][2]=false;
     }
     else if(posFantasma[n][2]==2 && mapa[posFantasma[n][0]+1][posFantasma[n][1]]==0){
         changeDir=true;
-        //dirFantasma[n][0]=false;
+        dirFantasma[n][0]=false;
     }
     else if(posFantasma[n][2]==1 && mapa[posFantasma[n][0]][posFantasma[n][1]+1]==0){
         changeDir=true;
-        //dirFantasma[n][3]=false;
+        dirFantasma[n][3]=false;
     }
     else if(posFantasma[n][2]==3 && mapa[posFantasma[n][0]][posFantasma[n][1]-1]==0){
         changeDir=true;
-        //dirFantasma[n][1]=false;
+        dirFantasma[n][1]=false;
     }
-    //De totes les direccions disponibles agafa una
+    //De totes les direccions disponibles agafa una, si el bolean changeDir és true fent servir un bucle per escollir una nova direcció mentres aquesta no sigui vàlida
     
     if(changeDir==true){
     do{
-    var direccio = Math.floor((Math.random() * 3) + 0);
+    var direccio = Math.floor((Math.random() * 4) + 0);
+        console.log("LA DIRECCIO ES"+direccio);
 
     }while(dirFantasma[n][direccio]!=true);
         
@@ -207,7 +200,7 @@ function comprovarFantasma(){
     }
     
 }
-//Depenent de la direcció obtinguda disponible es mourà cap a una direcció o altra. 
+//Utilitza la direcció disponible de cada fantasma per moure una posició
 function moureFantasma(){
     
     for(n=0;n<=2;n++){
@@ -237,21 +230,18 @@ function moureFantasma(){
 
 //Controlador que s'executarà cada segón
 function pacMan(){
+    //A cada segon detecta què tecla s'ha pulsat
     var element = document.getElementById("all");  
 	document.onkeydown = teclat;
     
-    comprovarDirPlayer();
+    //comprovarDirPlayer();
     
     comprovarFantasma();
     moureFantasma();
     mourePlayer();
     mostrarMapa();
     
-    console.log("La posicion del player: "+posPlayer[0]+" "+posPlayer[1]);
-    console.log("La posicion del fantasma1: "+posFantasma[0][0]+" "+posFantasma[0][1]);
-    console.log("La posicion del fantasma2: "+posFantasma[1][0]+" "+posFantasma[1][1]);
-    console.log("La posicion del fantasma3: "+posFantasma[2][0]+" "+posFantasma[2][1]);
-    
+    //Es comprova a cada segón que la posició del player no sigui la mateixa a la posició d'un fantasma, si és igual, la variable booleana "viu" es torna false, i mostra al div amb l'id "bloc" un missatge. Si no, mostra els punts actuals. 
     if(posPlayer[0]==posFantasma[0][0]&&posPlayer[1]==posFantasma[0][1]||
       posPlayer[0]==posFantasma[1][0]&&posPlayer[1]==posFantasma[1][1]||
       posPlayer[0]==posFantasma[2][0]&&posPlayer[1]==posFantasma[2][1]){
@@ -261,11 +251,13 @@ function pacMan(){
     document.getElementById("bloc").innerHTML = "Punts: <font color='green'>"+points+"</font> de 120"; 
     points++;
     }
+    //Si els punts són 120 (equivalent a 1min), viu és igual a false i mostra un missatge de "has guanyat"
     if(points>=120){
         document.getElementById("bloc").innerHTML = "Has guanyat!";
         viu=false;
     }
 }
+//Detecta quina tecla s'ha pulsat i la guarda a la variable key, per després ser utilitzada per moure el comemcocos
 var dirTeclat = 0;
 function teclat(e){ 
 	var key = document.all ? e.which : e.key;
@@ -283,13 +275,13 @@ function teclat(e){
 	}
 }
 
-var points = 0;
+//Es mostra el mapa fent servir un for que recorre tot l'array mapa, mostrant diferents tipus d'imatge al canvas depenent del contingut dins l'array.
 function mostrarMapa(){ 
 	var canvas = document.getElementById("mapa");
 	var img; 
 	for(y=0;y<=31;y++)
 	{	
-		for(x=0;x<=27;x++)
+		for(x=0;x<=30;x++)
 		{
 			if (mapa[y][x] == 0){
 				img = document.getElementById("paret"); 
@@ -307,18 +299,35 @@ function mostrarMapa(){
 		}
 	}
 }
+//Funció que s'executa si es prem el botó "restart" que surt si es perd
 function restart(){
     location.reload();
 }
 
-document.getElementById("bloc");
+//Es declaren algunes variables i s'inicien algunes funcions
+var points = 0;
 var viu =true;
+var maxPunts;
+document.getElementById("bloc");
 mostrarMapa();
 posicioFantasmesInicial();
 setPlace();
+
+//Funció que executa la funció pacMan cada mitg segon. (el guarda a una variable per poder pararla en un moment)
 var pacoMan = setInterval(pacMan, 500);
+
+
+if( document.cookie==null ) { 
+    document.cookie = "punts=0; max-age=3600; path=/";
+    console.log(document.cookie);
+}else{
+    maxPunts=document.cookie;
+    console.log(document.cookie);
+}
+
+//Si el bolean viu es torna false, es deixa d'executar el pacoMan, aixi que es para el videojoc
 if(viu==false){
-//clearInterval(pacoMan);
+clearInterval(pacoMan);
 }
 
 
