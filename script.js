@@ -146,24 +146,37 @@ function comprovarFantasma(){
     
     if(mapa[posFantasma[n][0]-1][posFantasma[n][1]]!=0){
         dirFantasma[n][0]=true;
+        if(mapa[posFantasma[n][0]-1][posFantasma[n][1]]=="U"){
+            viu=false;
+        }
 
     }else{
         dirFantasma[n][0]=false;
     }
     if(mapa[posFantasma[n][0]+1][posFantasma[n][1]]!=0){
         dirFantasma[n][2]=true;
+        if(mapa[posFantasma[n][0]+1][posFantasma[n][1]]=="U"){
+            viu=false;
+        }
+        
 
     }else{
         dirFantasma[n][2]=false;
     }
     if(mapa[posFantasma[n][0]][posFantasma[n][1]-1]!=0){
         dirFantasma[n][3]=true;
+        if(mapa[posFantasma[n][0]][posFantasma[n][1]-1]=="U"){
+            viu=false;
+        }
 
     }else{
         dirFantasma[n][3]=false;
     }
     if(mapa[posFantasma[n][0]][posFantasma[n][1]+1]!=0){
         dirFantasma[n][1]=true;
+        if(mapa[posFantasma[n][0]][posFantasma[n][1]+1]=="U"){
+            viu=false;
+        }
 
     }else{
         dirFantasma[n][1]=false;
@@ -236,6 +249,13 @@ function pacMan(){
     
     //comprovarDirPlayer();
     
+    
+    //Si el bolean viu es torna false, es deixa d'executar el pacoMan, aixi que es para el videojoc
+    if(viu==false){
+    clearInterval(pacoMan);
+    }
+    
+    
     comprovarFantasma();
     moureFantasma();
     mourePlayer();
@@ -245,10 +265,10 @@ function pacMan(){
     if(posPlayer[0]==posFantasma[0][0]&&posPlayer[1]==posFantasma[0][1]||
       posPlayer[0]==posFantasma[1][0]&&posPlayer[1]==posFantasma[1][1]||
       posPlayer[0]==posFantasma[2][0]&&posPlayer[1]==posFantasma[2][1]){
-        document.getElementById("bloc").innerHTML = "Has perdut amb "+points+" punts :( <br> <button type='button' onclick='restart()'>Reinicia</button>"; 
+        document.getElementById("bloc").innerHTML = "Has perdut amb "+points+" punts :( <br> <button type='button' onclick='restart()'>Reinicia</button><h6><font color='blue'>MaxPts(cookie)="+maxPunts+"</font></h6>";  
         viu=false;
     }else if(viu==true){
-    document.getElementById("bloc").innerHTML = "Punts: <font color='green'>"+points+"</font> de 120<br>PUNTS MaxPts(cookie)="+maxPunts; 
+    document.getElementById("bloc").innerHTML = "Punts: <font color='green'>"+points+"</font> de 120<br><h6>MaxPts(cookie)="+maxPunts+"</h6>"; 
     points++;
         //Si el valor de la cookie guardat a la variable maxPunts és menor al valor dels points, actualitza la cookie
         if(maxPunts<points){
@@ -322,8 +342,6 @@ setPlace();
 //Funció que executa la funció pacMan cada mitg segon. (el guarda a una variable per poder pararla en un moment)
 var pacoMan = setInterval(pacMan, 500);
 
-
-
 //Si la cookie no està creada, la crea. AVIS IMPORTANT: LA COOKIE NO FUNCIONA A GOOGLE CHROME JA QUE BLOQUEJA LES COOKIE QUE PROVENEN DE FILE LOCAL
 if (document.cookie.indexOf("punts") >= 0) {
   maxPunts = getCookie("punts");
@@ -342,12 +360,6 @@ function getCookie(name) {
 }
 
 
-
-
-//Si el bolean viu es torna false, es deixa d'executar el pacoMan, aixi que es para el videojoc
-if(viu==false){
-clearInterval(pacoMan);
-}
 
 
 
