@@ -248,8 +248,14 @@ function pacMan(){
         document.getElementById("bloc").innerHTML = "Has perdut amb "+points+" punts :( <br> <button type='button' onclick='restart()'>Reinicia</button>"; 
         viu=false;
     }else if(viu==true){
-    document.getElementById("bloc").innerHTML = "Punts: <font color='green'>"+points+"</font> de 120"; 
+    document.getElementById("bloc").innerHTML = "Punts: <font color='green'>"+points+"</font> de 120<br>PUNTS MaxPts(cookie)="+maxPunts; 
     points++;
+        //Si el valor de la cookie guardat a la variable maxPunts és menor al valor dels points, actualitza la cookie
+        if(maxPunts<points){
+            maxPunts=points;
+            document.cookie = "punts="+maxPunts+"; path=/";
+            
+        }
     }
     //Si els punts són 120 (equivalent a 1min), viu és igual a false i mostra un missatge de "has guanyat"
     if(points>=120){
@@ -317,20 +323,31 @@ setPlace();
 var pacoMan = setInterval(pacMan, 500);
 
 
-if( document.cookie==null ) { 
-    document.cookie = "punts=0; max-age=3600; path=/";
-    console.log(document.cookie);
-}else{
-    maxPunts=document.cookie;
-    console.log(document.cookie);
+
+//Si la cookie no està creada, la crea. AVIS IMPORTANT: LA COOKIE NO FUNCIONA A GOOGLE CHROME JA QUE BLOQUEJA LES COOKIE QUE PROVENEN DE FILE LOCAL
+if (document.cookie.indexOf("punts") >= 0) {
+  maxPunts = getCookie("punts");
 }
+else {
+  document.cookie = "punts=0; path=/";
+    var lasCookies = document.cookie;
+    console.log("S'ha creat la cookie"+lasCookies);
+    maxPunts = getCookie("punts");
+}
+//Aquesta funció agafa el valor de la cookie i el retorna
+function getCookie(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2) return parts.pop().split(";").shift();
+}
+
+
+
 
 //Si el bolean viu es torna false, es deixa d'executar el pacoMan, aixi que es para el videojoc
 if(viu==false){
 clearInterval(pacoMan);
 }
-
-
 
 
 
